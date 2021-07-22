@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+    <org.eventb.core.extendsContext name="set2" org.eventb.core.target="cxt_2A"/>
+    <org.eventb.core.carrierSet name="set3" org.eventb.core.identifier="PHASES"/>
+    <org.eventb.core.constant name="set4" org.eventb.core.identifier="SENSOR"/>
+    <org.eventb.core.constant name="set5" org.eventb.core.identifier="CONTROLLER"/>
+    <org.eventb.core.constant name="set6" org.eventb.core.identifier="SYNC"/>
+    <org.eventb.core.axiom name="set7" org.eventb.core.comment="// REQ 12: The phase is either SENSOR or CONTROLLER or SYNC." org.eventb.core.label="axm10" org.eventb.core.predicate="partition(PHASES, {SENSOR}, {CONTROLLER}, {SYNC})"/>
+</org.eventb.core.contextFile>

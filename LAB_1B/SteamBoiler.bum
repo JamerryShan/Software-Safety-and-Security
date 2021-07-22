@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="heater_state ≔ OFF" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="pressure ≔ 56" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="phase ≔ CONTROLLER" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="timestamp ≔ 0" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="local_sensor_time ≔ 0" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="local_controller_time ≔ 0" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="cycle_exec ≔ T_MAX" org.eventb.core.label="act7"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="SteamBoilerParameters"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="heater_state"/>
+    <org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="heater_state ∈ HEATER"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="pressure"/>
+    <org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="pressure ∈ ℤ"/>
+    <org.eventb.core.variable name="-" org.eventb.core.identifier="phase"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="inv3" org.eventb.core.predicate="phase ∈ PHASES"/>
+    <org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SetHeaterStateHigh">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="phase = CONTROLLER"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="phase ≔ TANK" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="heater_state ≔ HIGH" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="local_controller_time ≔ max({local_controller_time + delta, local_sensor_time})" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="timestamp ≔ local_controller_time " org.eventb.core.label="act4"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="50 ≤ pressure"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="55 ≥ pressure"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd5" org.eventb.core.predicate="delta ∈ 1‥T_MAX"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="grd4" org.eventb.core.predicate="local_controller_time + delta ∈ ℕ"/>
+        <org.eventb.core.parameter name="grd2" org.eventb.core.identifier="delta"/>
+        <org.eventb.core.guard name="grd4" org.eventb.core.label="grd9" org.eventb.core.predicate="max({local_controller_time + delta, local_sensor_time}) ∈ ℕ "/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SetHeaterStateLow">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="phase = CONTROLLER"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="phase ≔ TANK" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="act3" org.eventb.core.assignment="heater_state ≔ LOW" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="act4" org.eventb.core.assignment="local_controller_time ≔ max({local_controller_time + delta, local_sensor_time})" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="act5" org.eventb.core.assignment="timestamp ≔ local_controller_time " org.eventb.core.label="act4"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="60 ≥ pressure"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="56 ≤ pressure"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd5" org.eventb.core.predicate="delta ∈ 1‥T_MAX"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="grd4" org.eventb.core.predicate="local_controller_time + delta ∈ ℕ"/>
+        <org.eventb.core.parameter name="grd3" org.eventb.core.identifier="delta"/>
+        <org.eventb.core.guard name="grd4" org.eventb.core.label="grd6" org.eventb.core.predicate="local_sensor_time ∈ ℕ"/>
+        <org.eventb.core.guard name="grd5" org.eventb.core.label="grd7" org.eventb.core.predicate="max({local_controller_time + delta, local_sensor_time}) ∈ ℕ"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SetHeaterStateOff">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="phase = CONTROLLER"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="phase ≔ TANK" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="heater_state ≔ OFF" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="local_controller_time ≔ max({local_controller_time + delta, local_sensor_time})" org.eventb.core.label="act3"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="pressure ≥ 61"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="pressure ≤ 65"/>
+        <org.eventb.core.guard name="act4" org.eventb.core.label="grd5" org.eventb.core.predicate="delta ∈ 1‥T_MAX"/>
+        <org.eventb.core.guard name="act2" org.eventb.core.label="grd4" org.eventb.core.predicate="local_controller_time + delta ∈ ℕ"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd6" org.eventb.core.predicate="max({local_controller_time + delta, local_sensor_time}) ∈ ℕ"/>
+        <org.eventb.core.parameter name="act3" org.eventb.core.identifier="delta"/>
+        <org.eventb.core.action name="act5" org.eventb.core.assignment="timestamp ≔ local_controller_time " org.eventb.core.label="act4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="2" org.eventb.core.identifier="timestamp"/>
+    <org.eventb.core.invariant name="3" org.eventb.core.label="inv4" org.eventb.core.predicate="timestamp ∈ ℕ"/>
+    <org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DecreasePressureLow">
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="phase = TANK"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="pressure ≔ pressure − amount" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="phase ≔ CONTROLLER" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="local_sensor_time ≔ timestamp + delta" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="timestamp ≔ timestamp + delta" org.eventb.core.label="act4"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="heater_state = LOW"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="amount ∈ 0‥2"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd4" org.eventb.core.predicate="pressure − amount ≤ 65"/>
+        <org.eventb.core.parameter name="." org.eventb.core.identifier="amount"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd5" org.eventb.core.predicate="pressure − amount &gt; 50"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd6" org.eventb.core.predicate="delta ∈ 1‥T_MAX"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="grd7" org.eventb.core.predicate="timestamp + delta ∈ ℕ"/>
+        <org.eventb.core.parameter name="grd3" org.eventb.core.identifier="delta"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="IncreasePressureHigh">
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="phase = TANK"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="pressure ≔ pressure + amount" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="phase ≔ CONTROLLER" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="local_sensor_time ≔ timestamp + delta" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="timestamp ≔ timestamp + delta" org.eventb.core.label="act4"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="heater_state = HIGH"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="amount ∈ 0‥3"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd4" org.eventb.core.predicate="pressure + amount ≤ 65"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd5" org.eventb.core.predicate="pressure + amount &gt; 50"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd6" org.eventb.core.predicate="delta ∈ 1‥T_MAX"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="grd7" org.eventb.core.predicate="timestamp + delta ∈ ℕ"/>
+        <org.eventb.core.parameter name="/" org.eventb.core.identifier="amount"/>
+        <org.eventb.core.parameter name="grd3" org.eventb.core.identifier="delta"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DecreasePressureOff">
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="amount ∈ 1‥2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="pressure ≔ pressure − amount" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="phase ≔ CONTROLLER" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="local_sensor_time ≔ timestamp + delta" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="timestamp ≔ timestamp + delta" org.eventb.core.label="act4"/>
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="amount"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="pressure − amount &gt; 50"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd3" org.eventb.core.predicate="pressure − amount ≤ 65"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd4" org.eventb.core.predicate="heater_state = OFF"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd5" org.eventb.core.predicate="phase = TANK"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd6" org.eventb.core.predicate="delta ∈ 1‥T_MAX"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="grd7" org.eventb.core.predicate="timestamp + delta ∈ ℕ"/>
+        <org.eventb.core.parameter name="grd3" org.eventb.core.identifier="delta"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="evt3" org.eventb.core.label="inv5" org.eventb.core.predicate="50 ≤ pressure"/>
+    <org.eventb.core.invariant name="evt4" org.eventb.core.label="inv6" org.eventb.core.predicate="pressure ≤ 65"/>
+    <org.eventb.core.variable name="evt6" org.eventb.core.identifier="local_sensor_time"/>
+    <org.eventb.core.variable name="evt7" org.eventb.core.identifier="local_controller_time"/>
+    <org.eventb.core.invariant name="evt8" org.eventb.core.label="inv7" org.eventb.core.predicate="local_sensor_time ∈ ℕ"/>
+    <org.eventb.core.invariant name="evt9" org.eventb.core.label="inv8" org.eventb.core.predicate="local_controller_time ∈ ℕ"/>
+    <org.eventb.core.variable name="evt:" org.eventb.core.identifier="cycle_exec"/>
+    <org.eventb.core.invariant name="evt;" org.eventb.core.label="inv9" org.eventb.core.predicate="cycle_exec ∈ ℕ"/>
+</org.eventb.core.machineFile>

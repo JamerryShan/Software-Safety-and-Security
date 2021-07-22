@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="MAX_PRESSURE=65" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.axiom#axm4" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="LOW_PRESSURE=50" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.axiom#axm5" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="MID_PRESSURE=55" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.axiom#axm6" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="OFF_PRESSURE=60" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.axiom#axm7" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="+" org.eventb.core.label="axm5" org.eventb.core.predicate="OFF∈HEATER" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.axiom#axm8" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="," org.eventb.core.label="axm6" org.eventb.core.predicate="LOW∈HEATER" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.axiom#axm9" org.eventb.core.theorem="true"/>
+    <org.eventb.core.scAxiom name="-" org.eventb.core.label="axm7" org.eventb.core.predicate="HIGH∈HEATER" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.axiom#axm10" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scConstant name="OFF" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.constant#'" org.eventb.core.type="HEATER"/>
+    <org.eventb.core.scConstant name="LOW_PRESSURE" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.constant#cst4" org.eventb.core.type="ℤ"/>
+    <org.eventb.core.scConstant name="MID_PRESSURE" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.constant#cst5" org.eventb.core.type="ℤ"/>
+    <org.eventb.core.scCarrierSet name="HEATER" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.carrierSet#set1" org.eventb.core.type="ℙ(HEATER)"/>
+    <org.eventb.core.scConstant name="MAX_PRESSURE" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.constant#cst3" org.eventb.core.type="ℤ"/>
+    <org.eventb.core.scConstant name="OFF_PRESSURE" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.constant#cst2" org.eventb.core.type="ℤ"/>
+    <org.eventb.core.scConstant name="HIGH" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.constant#cst6" org.eventb.core.type="HEATER"/>
+    <org.eventb.core.scConstant name="LOW" org.eventb.core.source="/LAB_1B_refinement_new/cxt_2A.buc|org.eventb.core.contextFile#cxt_2A|org.eventb.core.constant#cst1" org.eventb.core.type="HEATER"/>
+</org.eventb.core.scContextFile>

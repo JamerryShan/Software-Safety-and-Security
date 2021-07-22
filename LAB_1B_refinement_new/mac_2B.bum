@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="mac_2A"/>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="cxt_2B"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="pressure"/>
+    <org.eventb.core.variable name="var1" org.eventb.core.identifier="heater_state"/>
+    <org.eventb.core.variable name="var3" org.eventb.core.identifier="timestamp"/>
+    <org.eventb.core.event name="var4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="act4" org.eventb.core.assignment="phase :∈ PHASES" org.eventb.core.label="act4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="var5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeaterStateHigh">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeaterStateHigh"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd3" org.eventb.core.predicate="phase = CONTROLLER"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="phase ≔ SYNC" org.eventb.core.comment="// REQ 13: The phase transitions in this pattern: CONTROLLER -&gt; SYNC -&gt; SENSOR -&gt; CONTROLLER." org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="var6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeaterStateLow">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeaterStateLow"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd3" org.eventb.core.predicate="phase = CONTROLLER"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="phase ≔ SYNC" org.eventb.core.comment="// REQ 13: The phase transitions in this pattern: CONTROLLER -&gt; SYNC -&gt; SENSOR -&gt; CONTROLLER." org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="var7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeaterStateOff">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeaterStateOff"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd3" org.eventb.core.predicate="phase = CONTROLLER"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="phase ≔ SYNC" org.eventb.core.comment="// REQ 13: The phase transitions in this pattern: CONTROLLER -&gt; SYNC -&gt; SENSOR -&gt; CONTROLLER." org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeater">
+        <org.eventb.core.refinesEvent name="-" org.eventb.core.target="SetHeater"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd2" org.eventb.core.predicate="phase = CONTROLLER"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="phase ≔ SYNC" org.eventb.core.comment="// REQ 13: The phase transitions in this pattern: CONTROLLER -&gt; SYNC -&gt; SENSOR -&gt; CONTROLLER." org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="var8" org.eventb.core.comment="// REQ 10: If the heater is LOW, the pressure might remain the same or decrease by some amount not larger than 2 bars." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DecreasePressureLow">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetPressure"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd4" org.eventb.core.predicate="phase = SENSOR"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="grd5" org.eventb.core.predicate="new_pressure ∈ pressure‥(pressure+2)"/>
+        <org.eventb.core.guard name="grd3" org.eventb.core.label="grd6" org.eventb.core.predicate="heater_state = LOW"/>
+        <org.eventb.core.action name="grd4" org.eventb.core.assignment="phase ≔ CONTROLLER" org.eventb.core.comment="// REQ 13: The phase transitions in this pattern: CONTROLLER -&gt; SYNC -&gt; SENSOR -&gt; CONTROLLER." org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt2" org.eventb.core.comment="// REQ 9: If the heater is HIGH, then the pressure might remain the same or increase by some amount not larger than 3 bars." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DecreasePressureHigh">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetPressure"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd4" org.eventb.core.predicate="phase = SENSOR"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="grd5" org.eventb.core.predicate="new_pressure ∈ (pressure−3)‥pressure"/>
+        <org.eventb.core.guard name="grd4" org.eventb.core.label="grd6" org.eventb.core.predicate="heater_state = HIGH"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="phase ≔ CONTROLLER" org.eventb.core.comment="// REQ 13: The phase transitions in this pattern: CONTROLLER -&gt; SYNC -&gt; SENSOR -&gt; CONTROLLER." org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt1" org.eventb.core.comment="// REQ 11: If the heater OFF the pressure should decrease by max 2 bars." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DecreasePressureOff">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetPressure"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd4" org.eventb.core.predicate="phase = SENSOR"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="grd5" org.eventb.core.predicate="new_pressure ∈ (pressure−2)‥(pressure−1)"/>
+        <org.eventb.core.guard name="grd5" org.eventb.core.label="grd6" org.eventb.core.predicate="heater_state = OFF"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="phase ≔ CONTROLLER" org.eventb.core.comment="// REQ 13: The phase transitions in this pattern: CONTROLLER -&gt; SYNC -&gt; SENSOR -&gt; CONTROLLER." org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="var:" org.eventb.core.identifier="phase"/>
+    <org.eventb.core.invariant name="var;" org.eventb.core.comment="// REQ 12: The phase is either SENSOR or CONTROLLER or SYNC." org.eventb.core.label="inv1" org.eventb.core.predicate="phase ∈ PHASES"/>
+    <org.eventb.core.invariant name="var=" org.eventb.core.comment="// REQ 8: pressure should be between 50-60, and never exceed 65 bars. " org.eventb.core.label="inv2" org.eventb.core.predicate="LOW_PRESSURE ≤ pressure ∧ pressure ≤ MAX_PRESSURE"/>
+    <org.eventb.core.event name="var&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SetTime">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="phase = SYNC"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="phase ≔ SENSOR" org.eventb.core.comment="// REQ 13: The phase transitions in this pattern: CONTROLLER -&gt; SYNC -&gt; SENSOR -&gt; CONTROLLER." org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

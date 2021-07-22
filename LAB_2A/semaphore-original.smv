@@ -1,0 +1,43 @@
+MODULE user(semaphore)
+VAR
+  state : { idle, entering, critical, exiting };
+ASSIGN
+  init(state) := idle;
+  next(state) := case
+    state = idle : { idle, entering };
+    state = entering & !semaphore : critical;
+    state = critical : { critical, exiting };
+    state = exiting : idle;
+    TRUE : state;
+  esac;
+  next(semaphore) := case
+    state = entering: TRUE;
+    state = exiting : FALSE;
+    TRUE : semaphore;
+  esac;
+FAIRNESS
+  running
+FAIRNESS
+  state = idle
+
+MODULE main
+VAR
+  semaphore : boolean;
+  proc1 : process user(semaphore);
+  proc2 : process user(semaphore);
+ASSIGN
+  init(semaphore) := FALSE;
+ 
+SPEC AG !(proc1.state = critical & proc2.state = critical); -- safety
+
+SPEC AG (proc1.state = entering -> AF proc1.state = critical); -- liveness
+SPEC AG (proc2.state = entering -> AF proc2.state = critical); -- liveness
+
+-- What happens in this error trace?
+----- Proc2, takes the lock over and over. Proc1 is not able to run since every time it is delegated to run, proc2 has locked the semaphore.
+-- What is the problem (the infinite loop)?
+----- Whenever proc1 gets to run, proc2 has locked the semaphore.
+-- Is the fairness condition fulfilled?
+----- It is.
+-- What could be changed to avoid such behavior?
+----- Add another fairness condition which forces processes to eventually get to the idle state after the entering state.

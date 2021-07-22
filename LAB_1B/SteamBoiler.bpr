@@ -1,0 +1,1969 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="DecreasePressureOff/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p8"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="50≤56"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureLow/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1"/>
+        <org.eventb.core.prIdent name="amount" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="pressure − amount&gt;50"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="50≤pressure − amount"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncreasePressureHigh/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1"/>
+        <org.eventb.core.prIdent name="amount" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="pressure+amount&gt;50"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="50≤pressure+amount"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureOff/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1"/>
+        <org.eventb.core.prIdent name="amount" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="pressure − amount&gt;50"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="50≤pressure − amount"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="63∈ℕ"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureLow/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p1"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="phase=TANK∧heater_state=LOW">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="50≤pressure∧pressure≤65"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heater_state=LOW">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="phase=TANK">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="pressure∈ℕ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="pressure≤65"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="50≤pressure"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pressure − 0∈ℕ"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncreasePressureHigh/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p1"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="50≤pressure∧pressure≤65"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pressure+0∈ℕ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="phase=TANK">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="pressure∈ℕ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="pressure≤65"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="phase=TANK∧heater_state=HIGH">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heater_state=HIGH">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="50≤pressure"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureOff/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p10"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="50≤pressure∧pressure≤65">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="pressure≤65">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="50≤pressure">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="timestamp∈ℤ">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="inv5/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p8"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10"/>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p11"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="50≤pressure∧pressure≤65"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="pressure≤65"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="pressure∈ℤ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="timestamp∈ℤ">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="50≤pressure"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncreasePressureHigh/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="HEATER,PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p8"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10"/>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p11"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="TANK∈PHASES"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="phase=TANK"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state∈HEATER"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase∈PHASES"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="phase=TANK∧heater_state=HIGH"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heater_state=HIGH"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="HIGH∈HEATER"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="timestamp∈ℤ">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureLow/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="HEATER,PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12"/>
+                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p13"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="phase=TANK∧heater_state=LOW"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="50≤pressure∧pressure≤65">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heater_state=LOW"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heater_state∈HEATER"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="timestamp∈ℤ">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="LOW∈HEATER"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="TANK∈PHASES"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="phase=TANK"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="phase∈PHASES"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="pressure≤65">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="50≤pressure">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="50≤pressure∧pressure≤65"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="56≤65"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="HEATER,PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8,p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p6"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="HIGH_PRESSURE_BOUNDARY" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="phase=CONTROLLER∧pressure∈HIGH_PRESSURE_BOUNDARY"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="50≤pressure∧pressure≤65"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pressure∈HIGH_PRESSURE_BOUNDARY∧HIGH=HIGH"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="pressure≤65"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heater_state=HIGH">
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase=CONTROLLER"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="50≤pressure"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="pressure∈HIGH_PRESSURE_BOUNDARY"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="pressure∈HIGH_PRESSURE_BOUNDARY∧heater_state=HIGH">
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="HEATER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8,p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p15"/>
+                                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p16"/>
+                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p17"/>
+                                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p18"/>
+                                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p19"/>
+                                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p20"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="HIGH_PRESSURE_BOUNDARY" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="pressure∈LOW_PRESSURE_BOUNDARY">
+            <org.eventb.core.prIdent name="LOW_PRESSURE_BOUNDARY" org.eventb.core.type="ℙ(ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="50≤pressure∧pressure≤65"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="phase=CONTROLLER∧pressure∈LOW_PRESSURE_BOUNDARY">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="LOW_PRESSURE_BOUNDARY" org.eventb.core.type="ℙ(ℤ)"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="heater_state∈HEATER"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state=HIGH"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="HIGH∈HEATER"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="timestamp∈ℤ">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤∧LOW=HIGH"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="LOW∈HEATER"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="pressure≤65"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="pressure∈ℤ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase=CONTROLLER">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="50≤pressure"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="pressure∈HIGH_PRESSURE_BOUNDARY"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="LOW=HIGH"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pressure∈HIGH_PRESSURE_BOUNDARY∧LOW=HIGH"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="pressure∈HIGH_PRESSURE_BOUNDARY∧heater_state=HIGH"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="HEATER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8,p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p15"/>
+                                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p16"/>
+                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p17"/>
+                                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p18"/>
+                                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p19"/>
+                                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p20"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="HIGH_PRESSURE_BOUNDARY" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="50≤pressure∧pressure≤65"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="heater_state∈HEATER"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state=HIGH"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="pressure∈OFF_PRESSURE_BOUNDARY">
+            <org.eventb.core.prIdent name="OFF_PRESSURE_BOUNDARY" org.eventb.core.type="ℙ(ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="OFF=HIGH"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="HIGH∈HEATER"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="timestamp∈ℤ">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤∧OFF=HIGH"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="OFF∈HEATER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="pressure≤65"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pressure∈HIGH_PRESSURE_BOUNDARY∧OFF=HIGH"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="pressure∈ℤ"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="phase=CONTROLLER∧pressure∈OFF_PRESSURE_BOUNDARY">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="OFF_PRESSURE_BOUNDARY" org.eventb.core.type="ℙ(ℤ)"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase=CONTROLLER">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="50≤pressure"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="pressure∈HIGH_PRESSURE_BOUNDARY"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="pressure∈HIGH_PRESSURE_BOUNDARY∧heater_state=HIGH"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureLow/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="amount" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pressure − amount≤65"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncreasePressureHigh/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="amount" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pressure+amount≤65"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureOff/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="amount" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pressure − amount≤65"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="inv6/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p8"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="timestamp∈ℤ">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureOff/grd2/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p8"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="timestamp∈ℤ">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncreasePressureHigh/grd4/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p8"/>
+                <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p9"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="timestamp∈ℤ">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="T_MAX" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="T_MAX∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="max({local_controller_time+delta,local_sensor_time})∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="max({local_controller_time+delta,local_sensor_time})∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="max({local_controller_time+delta,local_sensor_time})∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="local_controller_time∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="local_controller_time∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="local_controller_time∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/grd3/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p8"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/grd6/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p8"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureOff/grd3/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p8"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/grd4/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p8"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureLow/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="local_sensor_time∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureLow/grd2/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p8"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureLow/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncreasePressureHigh/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="local_sensor_time∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureOff/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="local_sensor_time∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncreasePressureHigh/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureOff/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureLow/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncreasePressureHigh/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureOff/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/grd6/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p10"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/grd6/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p10"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/grd6/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p10"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/grd5/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p8"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/grd7/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p10"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/grd2/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p8"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/grd6/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p9"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))">
+            <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/grd7/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p10"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/grd7/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p9"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))">
+            <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/grd8/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p11"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}⊆ℤ"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/grd9/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p10"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_controller_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="local_sensor_time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{local_controller_time+delta,local_sensor_time}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="TANK∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="TANK" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{local_controller_time+delta,local_sensor_time}⇒b≥x"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="pressure∈ℤ">
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="MAX_PRESSURE∈ℤ">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

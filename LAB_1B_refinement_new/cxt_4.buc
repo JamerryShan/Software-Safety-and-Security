@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+    <org.eventb.core.extendsContext name="'" org.eventb.core.target="cxt_3"/>
+    <org.eventb.core.carrierSet name="(" org.eventb.core.identifier="MODES"/>
+    <org.eventb.core.constant name=")" org.eventb.core.identifier="AUTOMATED"/>
+    <org.eventb.core.constant name="*" org.eventb.core.identifier="MONITORED"/>
+    <org.eventb.core.constant name="+" org.eventb.core.identifier="SUPERVISED"/>
+    <org.eventb.core.axiom name="," org.eventb.core.label="axm1" org.eventb.core.predicate="partition(MODES, {AUTOMATED}, {MONITORED}, {SUPERVISED})"/>
+    <org.eventb.core.carrierSet name="-" org.eventb.core.identifier="ROLES"/>
+    <org.eventb.core.carrierSet name="1" org.eventb.core.identifier="USERS"/>
+    <org.eventb.core.axiom name="=" org.eventb.core.label="axm5" org.eventb.core.predicate="partition(ROLES, {SUPERVISOR}, {OPERATOR})"/>
+    <org.eventb.core.axiom name="3" org.eventb.core.label="axm3" org.eventb.core.predicate="finite(USERS)"/>
+    <org.eventb.core.axiom name="2" org.eventb.core.label="axm4" org.eventb.core.predicate="USERS ≠ ∅"/>
+    <org.eventb.core.constant name=":" org.eventb.core.identifier="SUPERVISOR"/>
+    <org.eventb.core.constant name=";" org.eventb.core.identifier="OPERATOR"/>
+</org.eventb.core.contextFile>

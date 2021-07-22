@@ -1,0 +1,11 @@
+--- json.c	2021-05-20 03:25:59.886829385 -0400
++++ json_fixed.c	2021-05-20 03:26:38.197973223 -0400
+@@ -464,7 +464,7 @@ json_value * json_parse_ex (json_setting
+                {
+                   if (!b)
+                   {  
+-                     sprintf (error, "%d:%d: Unexpected EOF in block comment:\n%s", state.cur_line, state.cur_col, block_comment_start_ptr);
++                     snprintf (error,json_error_max, "%d:%d: Unexpected EOF in block comment:\n%s", state.cur_line, state.cur_col, block_comment_start_ptr); //this if for stack fix
+                      goto e_failed;
+                   }
+ 

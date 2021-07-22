@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="mac_3"/>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="cxt_4"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="pressure"/>
+    <org.eventb.core.variable name="var1" org.eventb.core.identifier="heater_state"/>
+    <org.eventb.core.variable name="var3" org.eventb.core.identifier="timestamp"/>
+    <org.eventb.core.variable name="var:" org.eventb.core.identifier="phase"/>
+    <org.eventb.core.variable name="varC" org.eventb.core.identifier="sensor_clock"/>
+    <org.eventb.core.variable name="varD" org.eventb.core.identifier="controller_clock"/>
+    <org.eventb.core.variable name="varG" org.eventb.core.identifier="old_timestamp"/>
+    <org.eventb.core.variable name="varJ" org.eventb.core.identifier="system_status"/>
+    <org.eventb.core.variable name="varM" org.eventb.core.identifier="sender_address"/>
+    <org.eventb.core.event name="varN" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="registered_users ≔ ∅" org.eventb.core.label="act10"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="modes ≔ AUTOMATED" org.eventb.core.label="act11"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="relations ≔ ∅" org.eventb.core.label="act12"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="current_user :∈ USERS" org.eventb.core.label="act13"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="var\" org.eventb.core.comment="// REQ 33: It should be possible to register a new user and assign it a role. " org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="RegisterUser">
+        <org.eventb.core.action name="(" org.eventb.core.assignment="registered_users ≔ registered_users ∪ {new_user}" org.eventb.core.label="act1"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="new_user"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd1" org.eventb.core.predicate="new_user ∉ registered_users"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd2" org.eventb.core.predicate="new_user ∈ USERS"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="new_role ∈ ROLES"/>
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="new_role"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="relations ≔ relations ∪ {new_user ↦ new_role}" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name="0" org.eventb.core.label="grd4" org.eventb.core.predicate="new_user ↦ new_role ∉ relations"/>
+        <org.eventb.core.guard name="1" org.eventb.core.label="grd5" org.eventb.core.predicate="(relations ∪ {new_user ↦ new_role}) ∈ ((registered_users ∪ {new_user}) → ROLES)"/>
+        <org.eventb.core.guard name="3" org.eventb.core.comment="// REQ 36: Only SUPERVISORS can register new users." org.eventb.core.label="grd7" org.eventb.core.predicate="current_user ↦ SUPERVISOR ∈ relations ∪ {new_user ↦ new_role}"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varf" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="LogIn">
+        <org.eventb.core.parameter name="element1" org.eventb.core.identifier="user"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="user ∈ registered_users"/>
+        <org.eventb.core.action name="element2" org.eventb.core.assignment="current_user ≔ user" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="element3" org.eventb.core.label="grd2" org.eventb.core.predicate="modes = AUTOMATED"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varO" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeaterStateHigh">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeaterStateHigh"/>
+        <org.eventb.core.guard name="grd6" org.eventb.core.comment="// REQ 32: In the AUTOMATED mode, the system executes control loop specified by achieving OBJECTIVES 2 and 3." org.eventb.core.label="grd12" org.eventb.core.predicate="modes ≠ SUPERVISED"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varP" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeaterStateLow">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeaterStateLow"/>
+        <org.eventb.core.guard name="grd9" org.eventb.core.comment="// REQ 32: In the AUTOMATED mode, the system executes control loop specified by achieving OBJECTIVES 2 and 3." org.eventb.core.label="grd12" org.eventb.core.predicate="modes ≠ SUPERVISED"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeaterStateOff">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeaterStateOff"/>
+        <org.eventb.core.guard name="grd9" org.eventb.core.comment="// REQ 32: In the AUTOMATED mode, the system executes control loop specified by achieving OBJECTIVES 2 and 3." org.eventb.core.label="grd12" org.eventb.core.predicate="modes ≠ SUPERVISED"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varb" org.eventb.core.comment="// REQ 34: If MONITORED, OPERATORS or SUPERVISORS are able to turn off the heater." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ManuallyTurnOff">
+        <org.eventb.core.guard name="." org.eventb.core.label="grd7" org.eventb.core.predicate="new_heater_state = OFF"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd4" org.eventb.core.predicate="current_user ↦ OPERATOR ∈ relations ∨ current_user ↦ SUPERVISOR ∈ relations"/>
+        <org.eventb.core.refinesEvent name="-" org.eventb.core.target="ManuallySetHeater"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd5" org.eventb.core.predicate="new_system_status = SYS_OFF"/>
+        <org.eventb.core.guard name="0" org.eventb.core.label="grd6" org.eventb.core.predicate="modes = MONITORED"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt4" org.eventb.core.comment="// REQ 35: If SUPERVISED, the supervisor and not the controller or the operator changes the state of the heater." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ManuallySetHeater">
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd6" org.eventb.core.predicate="current_user ↦ SUPERVISOR ∈ relations"/>
+        <org.eventb.core.refinesEvent name="-" org.eventb.core.target="ManuallySetHeater"/>
+        <org.eventb.core.guard name="0" org.eventb.core.label="grd4" org.eventb.core.predicate="modes = SUPERVISED"/>
+        <org.eventb.core.guard name="1" org.eventb.core.label="grd5" org.eventb.core.predicate="new_system_status = system_status"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varR" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DecreasePressureLow">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DecreasePressureLow"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varS" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DecreasePressureHigh">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DecreasePressureHigh"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varT" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DecreasePressureOff">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DecreasePressureOff"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varU" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetSystemOff">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetSystemOff"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.comment="// REQ 32: In the AUTOMATED mode, the system executes control loop specified by achieving OBJECTIVES 2 and 3." org.eventb.core.label="grd5" org.eventb.core.predicate="modes ≠ SUPERVISED"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varV" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TimeConGSen">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TimeConGSen"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.comment="// REQ 32: In the AUTOMATED mode, the system executes control loop specified by achieving OBJECTIVES 2 and 3." org.eventb.core.label="grd4" org.eventb.core.predicate="modes ≠ SUPERVISED"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varW" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TimeConSSen">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="TimeConSSen"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.comment="// REQ 32: In the AUTOMATED mode, the system executes control loop specified by achieving OBJECTIVES 2 and 3." org.eventb.core.label="grd4" org.eventb.core.predicate="modes ≠ SUPERVISED"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="varX" org.eventb.core.identifier="registered_users"/>
+    <org.eventb.core.variable name="varY" org.eventb.core.identifier="modes"/>
+    <org.eventb.core.invariant name="varZ" org.eventb.core.label="inv1" org.eventb.core.predicate="registered_users ⊆ USERS"/>
+    <org.eventb.core.invariant name="var[" org.eventb.core.label="inv2" org.eventb.core.predicate="modes ∈ MODES"/>
+    <org.eventb.core.variable name="var]" org.eventb.core.identifier="relations"/>
+    <org.eventb.core.invariant name="var^" org.eventb.core.label="inv3" org.eventb.core.predicate="relations ∈ registered_users → ROLES"/>
+    <org.eventb.core.event name="var_" org.eventb.core.comment="// REQ 27: Supervisor can switch modes from AUTOMATED to either MONITORIED or SUPERVISED.  " org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ChangeFromAutomatedToMonitoredOrSupervised">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="new_mode"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="current_user ↦ SUPERVISOR ∈ relations"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="new_mode ∈ {MONITORED, SUPERVISED}"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="modes = AUTOMATED"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="modes ≔ new_mode" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt1" org.eventb.core.comment="// REQ 28: Supervisor can switch modes from MONITORED or SUPERVISED back to AUTOMATED." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ChangeFromMonitoredOrSupervisedToAutomated">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="new_mode"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="current_user ↦ SUPERVISOR ∈ relations"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="new_mode = AUTOMATED"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="modes ∈ {MONITORED, SUPERVISED}"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="modes ≔ new_mode" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt3" org.eventb.core.comment="// REQ 29: Operator can switch the mode from AUTOMATED to MONITORED." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ChangeFromAutomatedToMonitored">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="new_mode"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="current_user ↦ OPERATOR ∈ relations"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="new_mode = MONITORED"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="modes = AUTOMATED"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="modes ≔ new_mode" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt2" org.eventb.core.comment="REQ 30: Operator can switch the mode from MONITORED to AUTOMATED." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ChangeFromMonitoredToAutomated">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="new_mode"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="current_user ↦ SUPERVISOR ∈ relations"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="new_mode = AUTOMATED"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="modes = MONITORED"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="modes ≔ new_mode" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="var`" org.eventb.core.comment="// REQ 31: Each user has a role, which is either OPERATOR or SUPERVISOR." org.eventb.core.label="inv4" org.eventb.core.predicate="∀ c · c ∈ registered_users ∧ relations(c) = OPERATOR ⇒ relations(c) ≠ SUPERVISOR"/>
+    <org.eventb.core.invariant name="vara" org.eventb.core.comment="// REQ 31: Each user has a role, which is either OPERATOR or SUPERVISOR." org.eventb.core.label="inv5" org.eventb.core.predicate="∀ c · c ∈ registered_users ∧ relations(c) = SUPERVISOR ⇒ relations(c) ≠ OPERATOR"/>
+    <org.eventb.core.variable name="varc" org.eventb.core.identifier="current_user"/>
+    <org.eventb.core.invariant name="vard" org.eventb.core.label="inv6" org.eventb.core.predicate="current_user ∈ USERS"/>
+    <org.eventb.core.invariant name="vare" org.eventb.core.comment="REQ 27: Supervisor can switch modes from AUTOMATED to either MONITORIED or SUPERVISED." org.eventb.core.label="inv7" org.eventb.core.predicate="modes = SUPERVISED ⇒ current_user ↦ SUPERVISOR ∈ relations"/>
+    <org.eventb.core.invariant name="inv1" org.eventb.core.comment="REQ 30: Operator can switch the mode from MONITORED to AUTOMATED.// REQ" org.eventb.core.label="inv8" org.eventb.core.predicate="modes = MONITORED ⇒ ((current_user ↦ SUPERVISOR ∈ relations) ∨ (current_user ↦ OPERATOR ∈ relations))"/>
+</org.eventb.core.machineFile>

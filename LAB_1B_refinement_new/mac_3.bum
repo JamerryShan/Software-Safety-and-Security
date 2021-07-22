@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="mac_2B"/>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="cxt_3"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="pressure"/>
+    <org.eventb.core.variable name="var1" org.eventb.core.identifier="heater_state"/>
+    <org.eventb.core.variable name="var3" org.eventb.core.identifier="timestamp"/>
+    <org.eventb.core.variable name="var:" org.eventb.core.identifier="phase"/>
+    <org.eventb.core.event name="var;" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="sensor_clock ≔ 0" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="controller_clock ≔ 0" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="old_timestamp ≔ 0" org.eventb.core.label="act7"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="system_status ≔ SYS_ON" org.eventb.core.label="act8"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="sender_address :∈ VALID_ADDRESSES" org.eventb.core.label="act9"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeaterStateHigh">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeaterStateHigh"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="delta"/>
+        <org.eventb.core.guard name="grd4" org.eventb.core.label="grd7" org.eventb.core.predicate="delta ∈ 1‥T_MAX"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="controller_clock ≔ controller_clock + delta" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="old_timestamp ≔ timestamp" org.eventb.core.label="act3"/>
+        <org.eventb.core.guard name="element2" org.eventb.core.comment="// REQ 20: At the CONTROLLER, the old_timestamp should be less than the timestamp and then updated to the value of the timestamp for every update to the controller." org.eventb.core.label="grd8" org.eventb.core.predicate="old_timestamp &lt; timestamp"/>
+        <org.eventb.core.guard name="grd5" org.eventb.core.label="grd9" org.eventb.core.predicate="system_status = SYS_ON"/>
+        <org.eventb.core.guard name="element4" org.eventb.core.comment="// REQ 26: The CONTROLLER should check that the obtained packet was sent by a sensor with a legitimate address." org.eventb.core.label="grd10" org.eventb.core.predicate="sender_address ∈ VALID_ADDRESSES"/>
+        <org.eventb.core.guard name="element5" org.eventb.core.label="grd11" org.eventb.core.predicate="controller_clock + delta ∈ ℕ "/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="var&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeaterStateLow">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeaterStateLow"/>
+        <org.eventb.core.parameter name="element1" org.eventb.core.identifier="delta"/>
+        <org.eventb.core.guard name="grd5" org.eventb.core.label="grd7" org.eventb.core.predicate="delta ∈ 1‥T_MAX"/>
+        <org.eventb.core.guard name="grd6" org.eventb.core.comment="// REQ 20: At the CONTROLLER, the old_timestamp should be less than the timestamp and then updated to the value of the timestamp for every update to the controller." org.eventb.core.label="grd8" org.eventb.core.predicate="old_timestamp &lt; timestamp"/>
+        <org.eventb.core.guard name="grd7" org.eventb.core.label="grd9" org.eventb.core.predicate="system_status = SYS_ON"/>
+        <org.eventb.core.action name="element3" org.eventb.core.assignment="controller_clock ≔ controller_clock + delta" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="element4" org.eventb.core.assignment="old_timestamp ≔ timestamp" org.eventb.core.label="act3"/>
+        <org.eventb.core.guard name="element5" org.eventb.core.comment="// REQ 26: The CONTROLLER should check that the obtained packet was sent by a sensor with a legitimate address." org.eventb.core.label="grd10" org.eventb.core.predicate="sender_address ∈ VALID_ADDRESSES"/>
+        <org.eventb.core.guard name="grd8" org.eventb.core.label="grd11" org.eventb.core.predicate="controller_clock + delta ∈ ℕ "/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="var?" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeaterStateOff">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeaterStateOff"/>
+        <org.eventb.core.parameter name="element1" org.eventb.core.identifier="delta"/>
+        <org.eventb.core.guard name="grd5" org.eventb.core.label="grd7" org.eventb.core.predicate="delta ∈ 1‥T_MAX"/>
+        <org.eventb.core.guard name="grd6" org.eventb.core.comment="// REQ 20: At the CONTROLLER, the old_timestamp should be less than the timestamp and then updated to the value of the timestamp for every update to the controller." org.eventb.core.label="grd8" org.eventb.core.predicate="old_timestamp &lt; timestamp"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="controller_clock ≔ controller_clock + delta" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="old_timestamp ≔ timestamp" org.eventb.core.label="act3"/>
+        <org.eventb.core.guard name="element3" org.eventb.core.label="grd9" org.eventb.core.predicate="system_status = SYS_ON"/>
+        <org.eventb.core.guard name="grd7" org.eventb.core.comment="// REQ 26: The CONTROLLER should check that the obtained packet was sent by a sensor with a legitimate address." org.eventb.core.label="grd10" org.eventb.core.predicate="sender_address ∈ VALID_ADDRESSES"/>
+        <org.eventb.core.guard name="grd8" org.eventb.core.label="grd11" org.eventb.core.predicate="controller_clock + delta ∈ ℕ "/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="var@" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DecreasePressureLow">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DecreasePressureLow"/>
+        <org.eventb.core.guard name="grd4" org.eventb.core.comment="// REQ 22: At the SENSOR, timestamp should be updated with a delta 1 to T_MAX every cycle." org.eventb.core.label="grd7" org.eventb.core.predicate="new_timestamp ∈ (sensor_clock + 1)‥(T_MAX + sensor_clock)"/>
+        <org.eventb.core.guard name="grd5" org.eventb.core.label="grd8" org.eventb.core.predicate="new_timestamp ≤ (T_MAX + controller_clock)"/>
+        <org.eventb.core.guard name="grd6" org.eventb.core.label="grd9" org.eventb.core.predicate="system_status = SYS_ON"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="sensor_clock ≔ new_timestamp" org.eventb.core.comment="// REQ 21: The sensor_clock should be updated with a delta 1 to T_MAX every cycle." org.eventb.core.label="act4"/>
+        <org.eventb.core.parameter name="grd7" org.eventb.core.identifier="sender"/>
+        <org.eventb.core.guard name="grd8" org.eventb.core.label="grd10" org.eventb.core.predicate="sender ∈ VALID_ADDRESSES"/>
+        <org.eventb.core.action name="grd9" org.eventb.core.assignment="sender_address ≔ sender" org.eventb.core.label="act5"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DecreasePressureHigh">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DecreasePressureHigh"/>
+        <org.eventb.core.guard name="(" org.eventb.core.comment="// REQ 22: At the SENSOR, timestamp should be updated with a delta 1 to T_MAX every cycle." org.eventb.core.label="grd7" org.eventb.core.predicate="new_timestamp ∈ (sensor_clock + 1)‥(T_MAX + sensor_clock)"/>
+        <org.eventb.core.guard name="grd5" org.eventb.core.label="grd8" org.eventb.core.predicate="new_timestamp ≤ (T_MAX + controller_clock)"/>
+        <org.eventb.core.guard name="grd6" org.eventb.core.label="grd9" org.eventb.core.predicate="system_status = SYS_ON"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="sensor_clock ≔ new_timestamp" org.eventb.core.comment="// REQ 21: The sensor_clock should be updated with a delta 1 to T_MAX every cycle." org.eventb.core.label="act4"/>
+        <org.eventb.core.parameter name="element1" org.eventb.core.identifier="sender"/>
+        <org.eventb.core.guard name="grd7" org.eventb.core.label="grd10" org.eventb.core.predicate="sender ∈ VALID_ADDRESSES"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="sender_address ≔ sender" org.eventb.core.label="act5"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varB" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DecreasePressureOff">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DecreasePressureOff"/>
+        <org.eventb.core.guard name="grd6" org.eventb.core.comment="// REQ 22: At the SENSOR, timestamp should be updated with a delta 1 to T_MAX every cycle." org.eventb.core.label="grd7" org.eventb.core.predicate="new_timestamp ∈ (sensor_clock + 1)‥(T_MAX + sensor_clock)"/>
+        <org.eventb.core.guard name="grd7" org.eventb.core.label="grd8" org.eventb.core.predicate="new_timestamp ≤ (T_MAX + controller_clock)"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="sensor_clock ≔ new_timestamp" org.eventb.core.comment="// REQ 21: The sensor_clock should be updated with a delta 1 to T_MAX every cycle." org.eventb.core.label="act4"/>
+        <org.eventb.core.guard name="grd8" org.eventb.core.label="grd9" org.eventb.core.predicate="system_status = SYS_ON"/>
+        <org.eventb.core.parameter name="element1" org.eventb.core.identifier="sender"/>
+        <org.eventb.core.guard name="grd9" org.eventb.core.label="grd10" org.eventb.core.predicate="sender ∈ VALID_ADDRESSES"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt2" org.eventb.core.comment="// REQ 24: When the controller receives the packet with an old timestamp, it sets the actuator in OFF and shuts down the system. " org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetSystemOff">
+        <org.eventb.core.refinesEvent name="-" org.eventb.core.target="SetHeater"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd3" org.eventb.core.predicate="new_heater_state = OFF"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd4" org.eventb.core.predicate="old_timestamp ≥ timestamp ∨ sender_address ∉ VALID_ADDRESSES "/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="system_status ≔ SYS_OFF" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="varC" org.eventb.core.identifier="sensor_clock"/>
+    <org.eventb.core.variable name="varD" org.eventb.core.identifier="controller_clock"/>
+    <org.eventb.core.invariant name="varE" org.eventb.core.comment="// REQ 14: sensor_clock must be a natural number." org.eventb.core.label="inv1" org.eventb.core.predicate="sensor_clock ∈ ℕ"/>
+    <org.eventb.core.invariant name="varF" org.eventb.core.comment="// REQ 15: controller_clock must be a natural number." org.eventb.core.label="inv2" org.eventb.core.predicate="controller_clock ∈ ℕ"/>
+    <org.eventb.core.variable name="varG" org.eventb.core.identifier="old_timestamp"/>
+    <org.eventb.core.invariant name="varH" org.eventb.core.comment="// REQ 19: old_timestamp must be a natural number." org.eventb.core.label="inv3" org.eventb.core.predicate="old_timestamp ∈ ℕ"/>
+    <org.eventb.core.invariant name="varI" org.eventb.core.comment="// REQ 25: At the SENSOR, controller_clock must be greater or equal to sensor_clock." org.eventb.core.label="inv4" org.eventb.core.predicate="phase = SENSOR ⇒ controller_clock ≥ sensor_clock"/>
+    <org.eventb.core.variable name="varJ" org.eventb.core.identifier="system_status"/>
+    <org.eventb.core.invariant name="varK" org.eventb.core.comment="// REQ 18: The system_status is either SYS_ON or SYS_OFF." org.eventb.core.label="inv5" org.eventb.core.predicate="system_status ∈ SYSTEM"/>
+    <org.eventb.core.invariant name="varL" org.eventb.core.label="inv6" org.eventb.core.predicate="heater_state ∈ HEATER"/>
+    <org.eventb.core.variable name="varM" org.eventb.core.identifier="sender_address"/>
+    <org.eventb.core.invariant name="varN" org.eventb.core.label="inv7" org.eventb.core.predicate="sender_address ∈ VALID_ADDRESSES"/>
+    <org.eventb.core.event name="varP" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ManuallySetHeater">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeater"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="new_system_status"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="system_status ≔ new_system_status" org.eventb.core.label="act3"/>
+        <org.eventb.core.guard name="act2" org.eventb.core.label="grd3" org.eventb.core.predicate="new_system_status ∈ SYSTEM"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="varO" org.eventb.core.comment="// REQ 23: The controller_clock should be updated with the max(timestamp, controller_clock+(1 to T_MAX))" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TimeConGSen">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetTime"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="timestamp = sensor_clock"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="controller_clock &gt; timestamp"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt3" org.eventb.core.comment="// REQ 23: The controller_clock should be updated with the max(timestamp, controller_clock+(1 to T_MAX))" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TimeConSSen">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetTime"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="timestamp = sensor_clock"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="controller_clock ≤ timestamp"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="controller_clock ≔ timestamp" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+    <org.eventb.core.extendsContext name="'" org.eventb.core.target="cxt_2B"/>
+    <org.eventb.core.constant name="(" org.eventb.core.identifier="T_MAX"/>
+    <org.eventb.core.axiom name=")" org.eventb.core.comment="// REQ 16: T_MAX must be a natural number." org.eventb.core.label="axm1" org.eventb.core.predicate="T_MAX ∈ ℕ&#9;"/>
+    <org.eventb.core.axiom name="+" org.eventb.core.comment="// REQ 17: T_MAX must be greater than 5." org.eventb.core.label="axm3" org.eventb.core.predicate="T_MAX &gt; 5"/>
+    <org.eventb.core.axiom name="*" org.eventb.core.label="axm2" org.eventb.core.predicate="T_MAX = 7"/>
+    <org.eventb.core.carrierSet name="," org.eventb.core.identifier="SYSTEM"/>
+    <org.eventb.core.constant name="-" org.eventb.core.identifier="SYS_ON"/>
+    <org.eventb.core.axiom name="." org.eventb.core.comment="// REQ 18: The system_status is either SYS_ON or SYS_OFF." org.eventb.core.label="axm4" org.eventb.core.predicate="SYS_ON ∈ SYSTEM"/>
+    <org.eventb.core.axiom name="/" org.eventb.core.comment="// REQ 18: The system_status is either SYS_ON or SYS_OFF." org.eventb.core.label="axm5" org.eventb.core.predicate="SYS_OFF ∈ SYSTEM"/>
+    <org.eventb.core.constant name="0" org.eventb.core.identifier="SYS_OFF"/>
+    <org.eventb.core.carrierSet name="1" org.eventb.core.identifier="VALID_ADDRESSES"/>
+    <org.eventb.core.axiom name="2" org.eventb.core.label="axm6" org.eventb.core.predicate="VALID_ADDRESSES ≠ ∅"/>
+    <org.eventb.core.axiom name="3" org.eventb.core.label="axm7" org.eventb.core.predicate="finite(VALID_ADDRESSES)"/>
+</org.eventb.core.contextFile>

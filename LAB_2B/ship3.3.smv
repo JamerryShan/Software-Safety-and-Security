@@ -1,0 +1,278 @@
+-- Assignment 3.3 - Temperature control (+1.5)
+
+---------------------------------------------------------------------------
+-- BUTTON                                                                --
+---------------------------------------------------------------------------
+
+-- For each door there is a button to request service, that can be
+-- pressed. A pressed button stays pressed unless reset by the
+-- controller. A button that is not pressed can become pressed
+-- nondeterministically.
+
+MODULE Button(reset)
+  VAR
+    pressed : boolean;
+  ASSIGN
+    init(pressed) := FALSE;
+    next(pressed) :=
+      case
+        pressed & reset  : FALSE;
+        pressed & !reset : TRUE;
+        !pressed & reset : FALSE; -- 3.3.1 a button may now be reset even if it was not pressed before.
+        !pressed         : {FALSE,TRUE};
+      esac;
+
+---------------------------------------------------------------------------
+-- DOOR                                                                  --
+---------------------------------------------------------------------------
+
+-- Each airlock (entrance) is equipped with a set of double doors.
+-- Each door can receive either open, close or nop commands
+-- from the controller, and it responds opening, closing, or
+-- preserving the current state.
+
+MODULE Door(door_cmd, sensor)
+  VAR
+    status : { open, closed };
+
+  ASSIGN
+    init(status) := closed;
+    next(status) :=
+      case
+        door_cmd = open      : open;
+        door_cmd = close & !sensor: closed;
+        door_cmd = close & sensor : open;
+        door_cmd = nop       : status;
+      esac;
+
+  -- REQ: The controller can issue an open command only if the door is closed.
+  INVARSPEC (door_cmd = open  -> status = closed)
+
+  -- REQ: The controller can issue a close command only if the door is open.
+  INVARSPEC (door_cmd = close -> status = open)
+
+  -- REQ: The door don't close when sensor is true
+  INVARSPEC (sensor & status = open -> next(status) = open)
+
+
+
+---------------------------------------------------------------------------
+-- AIRLOCK                                                            --
+---------------------------------------------------------------------------
+
+-- The airlock has an inner and outer door, and a pair of buttons (on the
+-- inside and outside door) to request the door to open.
+-- For simplicity, the input of both buttons is merged.
+
+MODULE Airlock(inner_door, outer_door, inner_buttons_i, inner_buttons_o, outer_buttons_i, outer_buttons_o, state)
+  VAR
+    inner_door_cmd : {open, close, nop};
+    outer_door_cmd : {open, close, nop};
+    last_open : {inner, outer, none};
+    reset_inner : boolean;
+    reset_outer : boolean;
+  DEFINE
+  -- 3.3.5 REQ: add a macro (DEFINE) to define an alias for combining the inside and outside buttons of each door.
+    inner_buttons_combine := case
+        state = normal   : inner_buttons_i | inner_buttons_o;
+        state = overheat : inner_buttons_i;
+      esac;
+
+    outer_buttons_combine :=
+      case
+        state = normal   : outer_buttons_i | outer_buttons_o;
+        state = overheat : outer_buttons_i;
+      esac;
+  -- Button is reset only if it is pressed and the door is open.
+
+  ASSIGN
+    reset_inner := ((inner_buttons_i | inner_buttons_o) & inner_door = open);
+    reset_outer := ((outer_buttons_i | outer_buttons_o) & outer_door = open);
+
+  ASSIGN
+    init(last_open) := none;
+    next(last_open) :=
+      case
+        -- Specify which door was the last one that was open
+        inner_door = open : inner;
+        outer_door = open : outer;
+        TRUE              : last_open;
+      esac;
+    
+  ASSIGN
+    outer_door_cmd :=
+      case
+        -- Specify when the door should open or close
+        inner_door = closed & outer_door = closed & outer_buttons_combine & (!inner_buttons_combine | (last_open = inner)): open;
+        reset_outer : close;
+        TRUE: nop;
+      esac;
+
+  ASSIGN
+    inner_door_cmd :=
+      case
+        -- Specify when the door should open or close
+        outer_door = closed & inner_door = closed & inner_buttons_combine & (!outer_buttons_combine | (last_open != inner)): open;
+        reset_inner : close;
+        TRUE: nop;
+      esac;
+
+  -- REQ: The controller must not reset a button that is not pressed.
+  INVARSPEC (reset_inner -> inner_door = open)
+
+  INVARSPEC (reset_outer -> outer_door = open)
+
+
+---------------------------------------------------------------------------
+-- MAIN                                                                  --
+---------------------------------------------------------------------------
+
+-- The main module shows the connection between modules.
+
+MODULE main
+  VAR
+    inner_door_sensor: boolean;
+    outer_door_sensor: boolean;
+    -- 3.3.4 REQ: Mode: There are two new states, “normal” and “overheating”; the mode can change non-deterministically between them.
+    state            : {normal, overheat};
+    inner_door       : Door(airlock.inner_door_cmd, inner_door_sensor);
+    outer_door       : Door(airlock.outer_door_cmd, outer_door_sensor);
+    -- inner_buttons    : Button(airlock.reset_inner);
+    -- outer_buttons    : Button(airlock.reset_outer);
+    inner_buttons_o  : Button(airlock.reset_inner);
+    inner_buttons_i  : Button(airlock.reset_inner);
+    outer_buttons_o  : Button(airlock.reset_outer);
+    outer_buttons_i  : Button(airlock.reset_outer);
+    airlock          : Airlock(inner_door.status, outer_door.status, 
+                                inner_buttons_i.pressed, inner_buttons_o.pressed, outer_buttons_i.pressed, outer_buttons_o.pressed, state);
+    -- Airlock: The airlock interface becomes more complex
+
+  DEFINE
+    -- 3.3.5 REQ: Design: 
+    -- add a macro (DEFINE) to define an alias for combining the inside and outside buttons of each door. 
+    inner_buttons.pressed := inner_buttons_i.pressed | inner_buttons_o.pressed;
+    outer_buttons.pressed := outer_buttons_i.pressed | outer_buttons_o.pressed;
+
+    -- 3.3.6 REQ: Change the existing fairness properties such that the inside button on each dooris eventually pressed.
+  FAIRNESS
+    inner_buttons_i.pressed;
+  FAIRNESS
+    outer_buttons_i.pressed;
+
+---------------------------------------------------------------------------
+-- REQUIREMENTS                                                          --
+---------------------------------------------------------------------------
+
+  -- The airlock controller must satisfy the following requirements.
+
+  -- REQ: Both doors are never open together
+  CTLSPEC
+    AG !(inner_door.status = open & outer_door.status = open)
+
+-- REQ (changed to 3.3.3): A door only opens if a button is pressed
+--   CTLSPEC
+--     AG (inner_door.status = open -> (inner_buttons.pressed))
+--   CTLSPEC
+--     AG (outer_door.status = open -> (outer_buttons.pressed))
+
+-- 3.3.3 REQ: Door functionality: The door (eventually) opens after the push of either button in normal mode,
+-- as before, but in “overheat” mode, it only answers to the inside buttons (_i). 
+  CTLSPEC 
+    AG ( (state = normal & inner_buttons.pressed) -> AF (inner_door.status = open))
+  CTLSPEC 
+    AG ( (state = normal & outer_buttons.pressed) -> AF (outer_door.status = open))
+  CTLSPEC 
+    AG ( (state = overheat & inner_buttons_i.pressed) -> AF (inner_door.status = open))
+  CTLSPEC 
+    AG ( (state = overheat & outer_buttons_i.pressed) -> AF (outer_door.status = open))
+
+  -- REQ: Both doors must eventually open (i.e., for either door,
+  -- there must eventually occur a state where it is open).
+  CTLSPEC
+    AG AF inner_door.status = open
+  CTLSPEC
+    AG AF outer_door.status = open
+
+  -- REQ: No button can reach a state where it remains pressed forever.
+  CTLSPEC
+    AG (inner_buttons.pressed -> AF !inner_buttons.pressed)
+  CTLSPEC
+    AG (outer_buttons.pressed -> AF !outer_buttons.pressed)
+
+---------------------------------------------------------------------------
+-- Advanced properties for higher grades --
+---------------------------------------------------------------------------
+
+  -- REQ: No pressed button can be reset until the door opens.
+  CTLSPEC
+    AG inner_buttons.pressed -> A [inner_buttons.pressed U inner_door.status = open]
+  CTLSPEC
+    AG outer_buttons.pressed -> A [outer_buttons.pressed U outer_door.status = open]
+
+  -- REQ: A button must be reset as soon as the door opens
+  CTLSPEC
+    AG (inner_buttons.pressed & inner_door.status = open -> AX !inner_buttons.pressed)
+  CTLSPEC
+    AG (outer_buttons.pressed & outer_door.status = open -> AX !outer_buttons.pressed)
+
+  -- REQ: If both buttons are pressed, then first one door opens,
+  -- followed by the other one
+  CTLSPEC
+    AG ( inner_buttons.pressed & outer_buttons.pressed ->
+      AX ( 
+        (inner_door.status = open -> AF outer_door.status = open) | 
+        (outer_door.status = open -> AF inner_door.status = open) 
+      )
+    )
+
+  LTLSPEC
+    G ( inner_buttons.pressed & outer_buttons.pressed ->
+      X ( 
+        (inner_door.status = open -> (inner_door.status = closed U outer_door.status = open ) ) | 
+        (outer_door.status = open -> (inner_door.status = closed U outer_door.status = open ) ) 
+      )
+    )
+
+---------------------------------------------------------------------------
+-- 3.2 --
+---------------------------------------------------------------------------
+-- Property: The doors never close when the sensor is on. --
+---------------------------------------------------------------------------
+  CTLSPEC
+    AG ((inner_door_sensor & inner_door.status = open) -> AX(inner_door.status = open))
+  CTLSPEC
+    AG ((outer_door_sensor & outer_door.status = open) -> AX(outer_door.status = open))
+
+  -- 3.3.6 Fairness properties: Change the existing fairness properties such that the inside button on each door
+  -- is eventually pressed.
+  FAIRNESS (!outer_door_sensor & !outer_buttons_i.pressed)
+
+  FAIRNESS (!inner_door_sensor & !inner_buttons_i.pressed)
+---------------------------------------------------------------------------
+-- 3.3 --
+---------------------------------------------------------------------------
+-- Property: The doors never close when the sensor is on. --
+---------------------------------------------------------------------------
+
+-- REQ (changed to 3.3.7): If both buttons are pressed, the inner door should take precedence unless it was just previously opened.
+--   CTLSPEC
+--     AG ((inner_buttons.pressed & outer_buttons.pressed & inner_door.status = closed & outer_door.status = closed & airlock.last_open != inner )
+--       -> AX (inner_door.status = open))
+
+-- 3.3.7 REQ: If both inside buttons are pressed, the inner door should take precedence.
+  CTLSPEC
+    AG ((inner_buttons_i.pressed & outer_buttons_i.pressed & inner_door.status = closed & outer_door.status = closed & airlock.last_open != inner )
+      -> AX (inner_door.status = open))
+
+
+  -- REQ (changed to 3.3.8): No pressed button can be reset until the door opens.
+  -- LTLSPEC
+  --   G (!airlock.reset_inner U inner_door.status = open)
+  -- LTLSPEC
+  --   G (!airlock.reset_outer U outer_door.status = open)
+
+-- 3.3.8 REQ: A request from a pressed button remains active until the door opens or overheating occurs
+  LTLSPEC
+    G (inner_buttons.pressed -> inner_buttons.pressed U (inner_door.status = open | state = overheat))
+  LTLSPEC
+    G (outer_buttons.pressed -> outer_buttons.pressed U (outer_door.status = open | state = overheat))

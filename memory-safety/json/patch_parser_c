@@ -1,0 +1,19 @@
+--- parser.c	2021-05-20 03:25:15.300549916 -0400
++++ parser_fixed.c	2021-05-20 03:26:19.456608278 -0400
+@@ -133,7 +133,7 @@ int main(int argc, char** argv)
+                 return 1;
+         }
+         file_size = filestatus.st_size;
+-        file_contents = (char*)malloc(filestatus.st_size);
++        file_contents = (char*)malloc(filestatus.st_size+1); //fix for heap
+         if ( file_contents == NULL) {
+                 fprintf(stderr, "Memory error: unable to allocate %d bytes\n", file_size);
+                 return 1;
+@@ -152,6 +152,7 @@ int main(int argc, char** argv)
+                 free(file_contents);
+                 return 1;
+         }
++        file_contents[file_size] = '\0'; //fix for heap
+         fclose(fp);
+ 
+         printf("%s\n", file_contents);

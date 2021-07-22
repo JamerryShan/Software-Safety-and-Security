@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="heater_state :∈ HEATER" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="act2" org.eventb.core.assignment="pressure ≔ MID_PRESSURE" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="act3" org.eventb.core.assignment="timestamp ≔ 0" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt2" org.eventb.core.comment="// REQ 4: The controller should set heater_state to HIGH if pressure is between 50 and 55." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SetHeaterStateHigh">
+        <org.eventb.core.action name=")" org.eventb.core.assignment="heater_state ≔ HIGH" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="pressure ≥ LOW_PRESSURE "/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="pressure ≤ MID_PRESSURE"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt4" org.eventb.core.comment="// REQ 5: The controller should set heater_state to LOW if pressure is between 56 and 60." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SetHeaterStateLow">
+        <org.eventb.core.action name=")" org.eventb.core.assignment="heater_state ≔ LOW" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="pressure &gt; MID_PRESSURE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="pressure ≤ OFF_PRESSURE"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt3" org.eventb.core.comment="// REQ 6: The controller should set heater_state to OFF if pressure is above 61." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SetHeaterStateOff">
+        <org.eventb.core.action name=")" org.eventb.core.assignment="heater_state ≔ OFF" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="pressure &gt; OFF_PRESSURE"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="evt5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SetHeater">
+        <org.eventb.core.action name=")" org.eventb.core.assignment="heater_state ≔ new_heater_state" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="new_heater_state ∈ HEATER"/>
+        <org.eventb.core.parameter name="," org.eventb.core.identifier="new_heater_state"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="cxt_2A"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="pressure"/>
+    <org.eventb.core.variable name="var1" org.eventb.core.identifier="heater_state"/>
+    <org.eventb.core.variable name="var3" org.eventb.core.identifier="timestamp"/>
+    <org.eventb.core.invariant name="inv2" org.eventb.core.comment="// REQ 1: pressure must be a natural number." org.eventb.core.label="inv1" org.eventb.core.predicate="pressure ∈ ℕ"/>
+    <org.eventb.core.invariant name="inv3" org.eventb.core.comment="// REQ 2: timestamp must be a natural number." org.eventb.core.label="inv2" org.eventb.core.predicate="timestamp ∈ ℕ"/>
+    <org.eventb.core.invariant name="inv4" org.eventb.core.comment="// REQ 3: The heater_state is either LOW, OFF or HIGH." org.eventb.core.label="inv3" org.eventb.core.predicate="heater_state ∈ HEATER"/>
+    <org.eventb.core.event name="evt1" org.eventb.core.comment="// REQ 7: The sensor non-deterministically assigns pressure and timestamp to natural numbers." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SetPressure">
+        <org.eventb.core.action name=")" org.eventb.core.assignment="pressure ≔ new_pressure" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="act1" org.eventb.core.assignment="timestamp ≔ new_timestamp" org.eventb.core.label="act2"/>
+        <org.eventb.core.parameter name="act2" org.eventb.core.identifier="new_pressure"/>
+        <org.eventb.core.parameter name="act3" org.eventb.core.identifier="new_timestamp"/>
+        <org.eventb.core.guard name="act4" org.eventb.core.label="grd1" org.eventb.core.predicate="new_pressure ∈ ℕ"/>
+        <org.eventb.core.guard name="act5" org.eventb.core.label="grd2" org.eventb.core.predicate="new_timestamp ∈ ℕ"/>
+        <org.eventb.core.guard name="act6" org.eventb.core.label="grd3" org.eventb.core.predicate="LOW_PRESSURE ≤ new_pressure ∧ new_pressure ≤ MAX_PRESSURE"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+    <org.eventb.core.constant name="'" org.eventb.core.identifier="MAX_PRESSURE"/>
+    <org.eventb.core.axiom name="(" org.eventb.core.label="axm1" org.eventb.core.predicate="MAX_PRESSURE = 65"/>
+    <org.eventb.core.constant name=")" org.eventb.core.identifier="LOW_PRESSURE"/>
+    <org.eventb.core.axiom name="*" org.eventb.core.label="axm2" org.eventb.core.predicate="LOW_PRESSURE = 50"/>
+    <org.eventb.core.constant name="+" org.eventb.core.identifier="MID_PRESSURE"/>
+    <org.eventb.core.axiom name="," org.eventb.core.label="axm3" org.eventb.core.predicate="MID_PRESSURE = 55"/>
+    <org.eventb.core.constant name="-" org.eventb.core.identifier="OFF_PRESSURE"/>
+    <org.eventb.core.axiom name="." org.eventb.core.label="axm4" org.eventb.core.predicate="OFF_PRESSURE = 60"/>
+    <org.eventb.core.carrierSet name="/" org.eventb.core.identifier="HEATER"/>
+    <org.eventb.core.constant name="0" org.eventb.core.identifier="OFF"/>
+    <org.eventb.core.axiom name="1" org.eventb.core.label="axm5" org.eventb.core.predicate="OFF ∈ HEATER"/>
+    <org.eventb.core.constant name="2" org.eventb.core.identifier="LOW"/>
+    <org.eventb.core.axiom name="3" org.eventb.core.label="axm6" org.eventb.core.predicate="LOW ∈ HEATER" org.eventb.core.theorem="true"/>
+    <org.eventb.core.constant name="4" org.eventb.core.identifier="HIGH"/>
+    <org.eventb.core.axiom name="5" org.eventb.core.label="axm7" org.eventb.core.predicate="HIGH ∈ HEATER"/>
+    <org.eventb.core.carrierSet name="6" org.eventb.core.identifier="PHASES"/>
+    <org.eventb.core.constant name="7" org.eventb.core.identifier="CONTROLLER"/>
+    <org.eventb.core.axiom name="8" org.eventb.core.label="axm8" org.eventb.core.predicate="CONTROLLER ∈ PHASES" org.eventb.core.theorem="true"/>
+    <org.eventb.core.constant name="9" org.eventb.core.identifier="TANK"/>
+    <org.eventb.core.axiom name=":" org.eventb.core.label="axm9" org.eventb.core.predicate="TANK ∈ PHASES" org.eventb.core.theorem="true"/>
+    <org.eventb.core.constant name=";" org.eventb.core.identifier="HIGH_PRESSURE_BOUNDARY"/>
+    <org.eventb.core.axiom name="=" org.eventb.core.label="axm10" org.eventb.core.predicate="HIGH_PRESSURE_BOUNDARY = 50‥55"/>
+    <org.eventb.core.constant name="&gt;" org.eventb.core.identifier="LOW_PRESSURE_BOUNDARY"/>
+    <org.eventb.core.axiom name="?" org.eventb.core.label="axm11" org.eventb.core.predicate="LOW_PRESSURE_BOUNDARY = 56‥60"/>
+    <org.eventb.core.constant name="@" org.eventb.core.identifier="OFF_PRESSURE_BOUNDARY"/>
+    <org.eventb.core.axiom name="A" org.eventb.core.label="axm12" org.eventb.core.predicate="OFF_PRESSURE_BOUNDARY = 61‥65"/>
+    <org.eventb.core.axiom name="B" org.eventb.core.label="axm13" org.eventb.core.predicate="MAX_PRESSURE ∈ ℤ" org.eventb.core.theorem="true"/>
+    <org.eventb.core.constant name="C" org.eventb.core.identifier="T_MAX"/>
+    <org.eventb.core.axiom name="D" org.eventb.core.label="axm14" org.eventb.core.predicate="T_MAX ∈ ℕ "/>
+    <org.eventb.core.axiom name="E" org.eventb.core.label="axm15" org.eventb.core.predicate="T_MAX = 7"/>
+    <org.eventb.core.axiom name="F" org.eventb.core.label="axm16" org.eventb.core.predicate="T_MAX &gt; 5"/>
+</org.eventb.core.contextFile>

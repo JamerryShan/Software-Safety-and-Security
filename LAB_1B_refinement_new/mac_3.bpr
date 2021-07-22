@@ -1,0 +1,2174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/pressure/EQL" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p1"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p8"/>
+                                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
+                                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p10"/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="pressure≥LOW_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="SENSOR∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureHigh/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="new_timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="new_timestamp∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureLow/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="new_timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="new_timestamp∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureOff/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="new_timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="new_timestamp∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/grd8/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with S={controller_clock+delta,timestamp}" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p2">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p15"/>
+                                        <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p1"/>
+                                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p18">
+                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Existence of minimum or maximum in goal with finite hypothesis" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p1"/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="S" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="finite(S)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="SENSOR∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="S={controller_clock+delta,timestamp}"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬{controller_clock+delta,timestamp}=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="finite({controller_clock+delta,timestamp})"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.finiteHypBoundedGoal"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/grd6/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with S={controller_clock+delta,timestamp}" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p2">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p15"/>
+                                        <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p1"/>
+                                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p18">
+                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Existence of minimum or maximum in goal with finite hypothesis" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p1"/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="S" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="finite(S)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="SENSOR∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="S={controller_clock+delta,timestamp}"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬{controller_clock+delta,timestamp}=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="finite({controller_clock+delta,timestamp})"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.finiteHypBoundedGoal"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="controller_clock+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="S" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/grd6/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p10"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p11"/>
+                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p12"/>
+                                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p13"/>
+                                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p14"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with S={controller_clock+delta,timestamp}" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p2">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p16"/>
+                                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p1"/>
+                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
+                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
+                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p18" org.eventb.core.prHyps=""/>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p19">
+                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Existence of minimum or maximum in goal with finite hypothesis" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p1"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="S" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="pressure≥LOW_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="finite(S)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="SENSOR∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="S={controller_clock+delta,timestamp}"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬{controller_clock+delta,timestamp}=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="finite({controller_clock+delta,timestamp})"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.finiteHypBoundedGoal"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="controller_clock+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="S" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="pressure≥LOW_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/grd6/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p10"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p11"/>
+                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p12"/>
+                                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p13"/>
+                                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p14"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with S={controller_clock+delta,timestamp}" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p2">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p16"/>
+                                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p1"/>
+                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
+                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
+                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p18" org.eventb.core.prHyps=""/>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p19">
+                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Existence of minimum or maximum in goal with finite hypothesis" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p1"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="S" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="finite(S)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="SENSOR∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="S={controller_clock+delta,timestamp}"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬{controller_clock+delta,timestamp}=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="finite({controller_clock+delta,timestamp})"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧⊤">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.finiteHypBoundedGoal"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="controller_clock+delta∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="S" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧⊤">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="phase'" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬SENSOR=SYNC">
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬CONTROLLER=SYNC">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬SENSOR=CONTROLLER">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="phase'=SENSOR⇒0≥0"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="sensor_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="pressure≥LOW_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊥⇒controller_clock+delta≥sensor_clock"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬SENSOR=CONTROLLER"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬SENSOR=SYNC"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬CONTROLLER=SYNC"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="SYNC=SENSOR⇒controller_clock+delta≥sensor_clock"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="sensor_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊥⇒controller_clock+delta≥sensor_clock"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬SENSOR=CONTROLLER"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬SENSOR=SYNC"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬CONTROLLER=SYNC"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="SYNC=SENSOR⇒controller_clock+delta≥sensor_clock"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="delta" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="sensor_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊥⇒controller_clock+delta≥sensor_clock"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬SENSOR=CONTROLLER"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬SENSOR=SYNC"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬CONTROLLER=SYNC"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="SYNC=SENSOR⇒controller_clock+delta≥sensor_clock"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧⊤">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureLow/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13,p14"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16,p17"/>
+                                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p19" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="new_timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊥⇒controller_clock≥new_timestamp"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="CONTROLLER=SENSOR⇒controller_clock≥new_timestamp"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬SENSOR=CONTROLLER"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="LOW_PRESSURE≤new_pressure∧new_pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="new_pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="phase=SENSOR⇒controller_clock≥timestamp">
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="LOW_PRESSURE≤new_pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="new_pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬SENSOR=SYNC"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬CONTROLLER=SYNC"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="new_pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="new_pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="controller_clock≥timestamp">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤⇒controller_clock≥timestamp">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase=SENSOR">
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureHigh/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13,p14"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16,p17"/>
+                                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p19" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="new_timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊥⇒controller_clock≥new_timestamp"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="CONTROLLER=SENSOR⇒controller_clock≥new_timestamp"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬SENSOR=CONTROLLER"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="LOW_PRESSURE≤new_pressure∧new_pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="new_pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="phase=SENSOR⇒controller_clock≥timestamp">
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="LOW_PRESSURE≤new_pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="new_pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬SENSOR=SYNC"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬CONTROLLER=SYNC"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="new_pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="new_pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="controller_clock≥timestamp">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤⇒controller_clock≥timestamp">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase=SENSOR">
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DecreasePressureOff/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13,p14"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16,p17"/>
+                                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p19" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="new_timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊥⇒controller_clock≥new_timestamp"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="CONTROLLER=SENSOR⇒controller_clock≥new_timestamp"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬SENSOR=CONTROLLER"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="LOW_PRESSURE≤new_pressure∧new_pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="new_pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="phase=SENSOR⇒controller_clock≥timestamp">
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="LOW_PRESSURE≤new_pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="new_pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬SENSOR=SYNC"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬CONTROLLER=SYNC"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="new_pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="new_pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="controller_clock≥timestamp">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤⇒controller_clock≥timestamp">
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="phase=SENSOR">
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetSystemOff/heater_state/EQL" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p12"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="system_status∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="system_status" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="SYS_OFF∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="SYS_OFF" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="SENSOR∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="SYS_ON∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="SYS_ON" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterOff/heater_state/EQL" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p12"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="system_status∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="system_status" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="SYS_OFF∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="SYS_OFF" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="SENSOR∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="SYS_ON∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="SYS_ON" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetSystemOff/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="HEATER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with new_heater_state=OFF" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prIdent name="new_heater_state" org.eventb.core.type="HEATER"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="new_heater_state=OFF"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="system_status∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="system_status" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heater_state∈HEATER"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heater_state=new_heater_state"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="SYS_OFF∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="SYS_OFF" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="SENSOR∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="SYS_ON∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="SYS_ON" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="phase∈PHASES">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="OFF∈HEATER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="heater_state=OFF"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/act9/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0" org.eventb.core.prSets="VALID_ADDRESSES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateHigh/act4/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p10" org.eventb.core.prInfHyps="p9"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="S" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="pressure≥LOW_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬SENSOR=CONTROLLER">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬SENSOR=SYNC">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬CONTROLLER=SYNC">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateLow/act4/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="S" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬SENSOR=CONTROLLER">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬SENSOR=SYNC">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬CONTROLLER=SYNC">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetHeaterStateOff/act4/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p10" org.eventb.core.prInfHyps="p9"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="S" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬SENSOR=CONTROLLER">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬S=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈S⇒b≥x)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬SENSOR=SYNC">
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬CONTROLLER=SYNC">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="S≠(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="PHASES" org.eventb.core.type="ℙ(PHASES)"/>
+            <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧⊤">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TimeConSSen/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="timestamp∈ℕ"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TimeConSSen/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="sensor_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="SENSOR=SENSOR⇒timestamp≥sensor_clock"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬SENSOR=CONTROLLER">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="timestamp=sensor_clock"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬SENSOR=SYNC">
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬CONTROLLER=SYNC">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="SENSOR=SENSOR⇒⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+            <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="TimeConGSen/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p18"/>
+                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p19"/>
+                                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p20"/>
+                                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p21"/>
+                                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p22"/>
+                                                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p23"/>
+                                                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p24"/>
+                                                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p25"/>
+                                                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p26"/>
+                                                <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p27"/>
+                                                <org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p28"/>
+                                                <org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29"/>
+                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p29"/>
+                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with phase=SYNC" org.eventb.core.prHyps="p1">
+                                                            <org.eventb.core.prAnte name="'">
+                                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p30"/>
+                                                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p17"/>
+                                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p29"/>
+                                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with timestamp=sensor_clock" org.eventb.core.prHyps="p3">
+                                                                            <org.eventb.core.prAnte name="'">
+                                                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p31"/>
+                                                                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p2"/>
+                                                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p31"/>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="sensor_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="system_status∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="system_status" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="phase=SENSOR⇒⊥"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬SENSOR=CONTROLLER">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="SENSOR=SENSOR⇒controller_clock≥sensor_clock"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="controller_clock≥sensor_clock"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="SYS_OFF∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="SYS_OFF" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬⊥"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="SENSOR∈PHASES"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="SYS_ON∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="SYS_ON" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬SYNC=SENSOR"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="phase=SYNC"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="CONTROLLER∈PHASES">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="phase=SENSOR⇒controller_clock≥sensor_clock"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬phase=SENSOR"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="timestamp=sensor_clock"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="sender_address∈VALID_ADDRESSES">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+            <org.eventb.core.prIdent name="sender_address" org.eventb.core.type="VALID_ADDRESSES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬SENSOR=SYNC"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬CONTROLLER=SYNC">
+            <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="controller_clock&gt;sensor_clock"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="controller_clock&gt;timestamp"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="phase∈PHASES"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ManuallySetHeater/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="sensor_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬SENSOR=CONTROLLER"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="SYNC=SENSOR⇒controller_clock≥sensor_clock"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊥⇒controller_clock≥sensor_clock"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬SENSOR=SYNC"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬CONTROLLER=SYNC"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ManuallySetHeater/phase/EQL" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p15"/>
+                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p16"/>
+                                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p17"/>
+                                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p18"/>
+                                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p19"/>
+                                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p20"/>
+                                <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p21"/>
+                                <org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p22"/>
+                                <org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p23"/>
+                                <org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p24"/>
+                                <org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p25"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with phase=CONTROLLER" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p26">
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p26" org.eventb.core.prHyps="p6">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p27"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="phase" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="system_status∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="system_status" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="SYNC=CONTROLLER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬SENSOR=CONTROLLER"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="SYS_OFF∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="SYS_OFF" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬⊥"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="SENSOR∈PHASES"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="SYS_ON∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="SYS_ON" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="phase=CONTROLLER"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="⊥"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="CONTROLLER∈PHASES"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="HIGH∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="HIGH" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="new_system_status∈SYSTEM">
+            <org.eventb.core.prIdent name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+            <org.eventb.core.prIdent name="new_system_status" org.eventb.core.type="SYSTEM"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="LOW∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="LOW" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="sender_address∈VALID_ADDRESSES">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+            <org.eventb.core.prIdent name="sender_address" org.eventb.core.type="VALID_ADDRESSES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="new_heater_state∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="new_heater_state" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬SENSOR=SYNC"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬CONTROLLER=SYNC"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="phase∈PHASES"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="OFF∈HEATER">
+            <org.eventb.core.prIdent name="HEATER" org.eventb.core.type="ℙ(HEATER)"/>
+            <org.eventb.core.prIdent name="OFF" org.eventb.core.type="HEATER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="SYNC=phase"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="SetSystemOff/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PHASES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PHASES,{SENSOR},{CONTROLLER},{SYNC}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="CONTROLLER" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SENSOR" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="SYNC" org.eventb.core.type="PHASES"/>
+        <org.eventb.core.prIdent name="controller_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="sensor_clock" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PHASES,{SENSOR},{CONTROLLER},{SYNC})"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬SENSOR=CONTROLLER"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="VALID_ADDRESSES≠(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="SYNC=SENSOR⇒controller_clock≥sensor_clock"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊥⇒controller_clock≥sensor_clock"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="old_timestamp≥timestamp∨¬sender_address∈VALID_ADDRESSES">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+            <org.eventb.core.prIdent name="old_timestamp" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="sender_address" org.eventb.core.type="VALID_ADDRESSES"/>
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="LOW_PRESSURE≤pressure">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬SENSOR=SYNC"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬CONTROLLER=SYNC"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="LOW_PRESSURE≤pressure∧pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="LOW_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬VALID_ADDRESSES=(∅ ⦂ ℙ(VALID_ADDRESSES))">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="pressure≤MAX_PRESSURE">
+            <org.eventb.core.prIdent name="MAX_PRESSURE" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="pressure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PHASES={SENSOR,CONTROLLER,SYNC}"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="old_timestamp≥timestamp∨sender_address∉VALID_ADDRESSES">
+            <org.eventb.core.prIdent name="VALID_ADDRESSES" org.eventb.core.type="ℙ(VALID_ADDRESSES)"/>
+            <org.eventb.core.prIdent name="old_timestamp" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="sender_address" org.eventb.core.type="VALID_ADDRESSES"/>
+            <org.eventb.core.prIdent name="timestamp" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

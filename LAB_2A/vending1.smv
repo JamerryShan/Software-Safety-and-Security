@@ -1,0 +1,65 @@
+MODULE main
+VAR
+  choice:  boolean;
+  payment: boolean;
+  acc_payment: boolean;
+  n_items: 0..10;
+  state:   { ready, expect_payment, dispense_item };
+ASSIGN
+  init (state) := ready;
+  next (state) := case
+		    state = ready          & choice & n_items > 0:  expect_payment;
+		    state = expect_payment & acc_payment: dispense_item;
+		    state = expect_payment & !choice & !payment: ready;
+		    state = dispense_item:	      ready;
+		    TRUE:                             state;
+  esac;
+
+  init (acc_payment) := FALSE;
+  next (acc_payment) := (state = expect_payment & payment);
+
+  init (n_items) := 10;
+  next (n_items) := case
+    state = dispense_item & n_items > 0: n_items - 1;
+    TRUE: n_items;
+  esac;
+
+DEFINE
+  release_item := (state = dispense_item);
+
+LTLSPEC
+  G(acc_payment -> F release_item);
+
+-- 1. Number of items should always be ≥0.
+CTLSPEC 
+  AG(n_items >= 0)
+
+-- 2. Payment should only be accepted if number of items > 0.
+CTLSPEC 
+  AG(acc_payment -> n_items > 0)
+
+-- 3. If an item is dispensed, the counter of items is always reduced by 1.
+LTLSPEC 
+  G((state = dispense_item) -> next(n_items) = n_items  - 1)
+
+
+--   -> State: 1.1 <-
+--     choice = FALSE
+--     payment = FALSE
+--     acc_payment = FALSE
+--     state = ready
+--     release_item = FALSE
+--   -> State: 1.2 <-
+--     choice = TRUE
+--   -> State: 1.3 <-
+--     choice = FALSE
+--     payment = TRUE
+--     state = expect_payment
+--   -> State: 1.4 <-
+--     payment = FALSE
+--     acc_payment = TRUE
+--     state = ready
+--   -- Loop starts here
+--   -> State: 1.5 <-
+--     acc_payment = FALSE
+--   -> State: 1.6 <-
